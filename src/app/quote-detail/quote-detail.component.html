@@ -1,6 +1,8 @@
-<p> By: &nbsp;{{quote.author}} </p>
-<p>Created : &nbsp;<span>{{quote.completeDate|dateCreated}}</span></p>
-<button (click)="deleteQuote(true)" class="btn btn-sm btn-danger">Delete Me</button>
+<div>
+    <p class="mt-3">By: &nbsp;<strong>{{quote.author}}</strong> </p>
+    <p>Created : &nbsp;<span>{{quote.completeDate|dateCreated}}</span></p>
+    <button (click)="deleteQuote(true)" class="btn btn-sm btn-danger">Delete Me</button>
+</div>
 
 
 <!-- <div class="container">
