@@ -15,6 +15,10 @@ export class QuoteComponent implements OnInit {
     new Quote(4, "Albert Einstein", "Logic will get you from A to B. Imagination will take you everywhere", 0, 0),
   ] 
 
+  toggleDetails(index:number){
+    this.quote[index].showAuthor = !this.quote[index].showAuthor;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
