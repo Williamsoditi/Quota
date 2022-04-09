@@ -2,6 +2,6 @@
     <div *ngFor="let quote of quote; let i = index">
         <p>{{ quote.id }}. &nbsp;<span>{{ quote.quote }} </span></p>
         <button class="btn btn-success btn-sm" (click)="toggleDetails(i)">Show more</button>
-        <app-quote-detail *ngIf="quote.showAuthor" [quote]="quote"></app-quote-detail>
+        <app-quote-detail *ngIf="quote.showAuthor" [quote]="quote" (isRead)="deleteQuote($event,i)"></app-quote-detail>
     </div>
 </ol>

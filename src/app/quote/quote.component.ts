@@ -18,6 +18,11 @@ export class QuoteComponent implements OnInit {
   toggleDetails(index:number){
     this.quote[index].showAuthor = !this.quote[index].showAuthor;
   }
+  deleteQuote(isRead: any, index: number){
+    if (isRead) {
+      this.quote.splice(index,1)
+    }
+  }
 
   constructor() { }
 
