@@ -5,3 +5,13 @@
         <app-quote-detail *ngIf="quote.showAuthor" [quote]="quote" (isRead)="deleteQuote($event,i)"></app-quote-detail>
     </div>
 </ol>
+
+<!-- HIGHLIGHT DIRECTIVE LOGIC - by upvotes -->
+<!-- <div *ngIf="quote.upvotes == highest ; then highlight else default">
+    <ng-template #highlight>
+        <p appHighlight>{{ quote.quote }}</p>
+    </ng-template>
+    <ng-template #default>
+        <p appHighlight>{{ quote.quote }}</p>
+    </ng-template>
+</div> -->
