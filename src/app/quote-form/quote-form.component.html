@@ -1,1 +1,17 @@
-<p>quote-form works!</p>
+<div class="container-fluid">
+    <form action="#" #quoteForm="ngForm">
+        <div class="form-group">
+            <label for="author-name">Author Name:</label>
+            <input type="text" required class="form-control" id="author-name" [(ngModel)]="newQuote.author" name="author-name">
+            <p class="mt-2">&nbsp;{{newQuote.author}}</p>
+        </div>
+        <div class="form-group mt-3">
+            <label for="quote">Enter quote here:</label>
+            <textarea id="description" rows="4" class="form-control" required></textarea>
+        </div>
+        <div class="form-group mt-3">
+            <label for="date">Date Created: &nbsp; </label>
+            <input type="date" id="complete" required>
+        </div>
+    </form>
+</div>
