@@ -14,18 +14,23 @@ export class QuoteComponent implements OnInit {
     new Quote(3, "Nadia Comaneci", "Enjoy the journey and try to get better every day. And don't lose the passion and the love for what you do", 0, 0, new Date(2022,1,30)),
     new Quote(4, "Albert Einstein", "Logic will get you from A to B. Imagination will take you everywhere", 0, 0, new Date(2022,4,10)),
   ] 
-
+// toggle details logic///
   toggleDetails(index:number){
     this.quote[index].showAuthor = !this.quote[index].showAuthor;
   }
+
+  //deletequote logic//
   deleteQuote(isRead: any, index: number){
+    if (isRead) {
+      let toDelete = confirm(`Will you delete this quote by ${this.quote[index].author} ?`)
+    }
     if (isRead) {
       this.quote.splice(index,1)
     }
   }
-
-  arr: number[] = this.quote.map(quote=>quote.upvote)
-  highest = Math.max(...this.arr)
+// upvote logic ///
+  // arr: number[] = this.quote.map(quote=>quote.upvote)
+  // highest = Math.max(...this.arr)
 
   constructor() { }
 
