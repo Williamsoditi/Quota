@@ -14,7 +14,7 @@ This is an application that serves a user with daily soothing quotes. It has an 
 ## Project Resources
 The following is a live link to the project's site
 
-Link : ``
+Link : `https://williamsoditi.github.io/Quota/`
 ## Installation
 **Requirements**
 + An access to the internet
