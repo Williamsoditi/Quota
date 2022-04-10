@@ -11,6 +11,7 @@ import { HighlightDirective } from './highlight.directive';
 import { DateCreatedPipe } from './date-created.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { AboutComponent } from './about/about.component';
+import { LikesComponent } from './likes/likes.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { AboutComponent } from './about/about.component';
     DateCreatedPipe,
     QuoteFormComponent,
     AboutComponent,
+    LikesComponent,
   ],
   imports: [
     BrowserModule,

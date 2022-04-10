@@ -1,31 +1,14 @@
 <div>
     <p class="mt-3">By: &nbsp;<strong>{{quote.author}}</strong> </p>
     <p>Created : &nbsp;<span>{{quote.completeDate|dateCreated}}</span></p>
-    <!-- <button (click)="deleteQuote(true)" class="btn btn-sm btn-danger">Delete Me</button> -->
     <div class="row mt-3">
-        <div class="col-sm-4">
-            <button class="btn btn-sm btn-info">Upvote &nbsp;<span>{{ quote.upvote}}</span></button>
+        <div class="col-sm-6">
+            <app-likes></app-likes>
         </div>
-        <div class="col-sm-4">
-            <button class="btn btn-sm btn-warning">Downvote &nbsp;<span>{{quote.downvote}}</span></button>
-        </div>
-        <div class="col-sm-4">
-            <button class="btn btn-sm btn-danger" (click)="deleteQuote(true)">Delete Me</button>
+        <div class="col-sm-6">
+            <button class="btn btn-sm btn-danger float-end" (click)="deleteQuote(true)">Delete Me</button>
         </div>
     </div>
 </div>
 
-
-<!-- <div class="container">
-    <div class="row">
-        <div class="col-sm-6">
-            <button class="btn btn-sm btn-info">Upvote   <span>{{ quote.upvote }}</span>
-            </button>
-        </div>
-        <div class="col-sm-6">
-            <button class="btn btn-sm btn-danger"><span>Downvote {{ quote.downvote }}</span>
-            </button>
-        </div>
-    </div>
-</div> -->
  
