@@ -7,3 +7,6 @@ a, h1, h2, input, button{
 p, li, span, label{
     font-family: 'Roboto', sans-serif;
 }
+.out{
+    text-decoration: underline solid black;
+}

@@ -28,6 +28,13 @@ export class QuoteComponent implements OnInit {
       this.quote.splice(index,1)
     }
   }
+
+  addNewQuote(quote:Quote){
+    let quoteLength = this.quote.length;
+    quote.id = quoteLength +1;
+    // quote.completeDate = new Date(quote.completeDate);
+    this.quote.push(quote);
+  }
 // upvote logic ///
   // arr: number[] = this.quote.map(quote=>quote.upvote)
   // highest = Math.max(...this.arr)
